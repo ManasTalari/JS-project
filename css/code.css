@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to top */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px; /* Limit container width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center content within the container */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.user-list {
+    margin-bottom: 20px;
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.user-list th, .user-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-list th {
+    background-color: #f2f2f2;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#userForm label{
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#userForm input{
+  width: calc(100% - 12px);
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.error{
+    color: red;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
